@@ -1,12 +1,15 @@
-import { Button } from '@mui/material';
-import SettingsIcon from '@mui/icons-material/Settings';
-function App() {
+import Sidebar from "./components/Sidebar"
+import Feed from "./components/Feed"
+import Rightbar from "./components/Rightbar"
+
+const App = () => {
+
   return (
-      <div className="App">
-      <Button variant="text">Text</Button>
-      <Button startIcon={<SettingsIcon/>} variant="contained" color="secondary" size="small">Contained</Button>
-      <Button variant="outlined" disabled>Outlined</Button>
-      </div>
+    <div>
+      <Sidebar />
+      <Feed />
+      <Rightbar />
+    </div>
   );
 }
 
